@@ -1,5 +1,70 @@
 #archeeve {
+  @font-face {
+    font-family: "Bonveno";
+    src: url(../assets/archeeve/BonvenoCF-Light-webfont.woff);
+  }
+  @font-face {
+    font-family: "Icons";
+    src: url(../assets/archeeve/icomoon.woff);
+  }
+  background: url("/assets/archeeve/background2.jpg");
+  background-position: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  #topcontainer {
+    background-color: rgba(51, 52, 71, 0.75);
+    overflow: hidden;
+  }
+  #logoimage {
+    padding: 20px;
+    width: 40px;
+    positon: relative;
+  }
+  #oplaward {
+    float: right;
+  }
   h1 {
-    color: blue;
+    margin: 0 auto;
+    padding: 100px;
+    text-align: center;
+    color: white;
+    font-family: Bonveno;
+    font-weight: 100;
+    font-size: 33px;
+  }
+  #firstheader {
+    padding-top: 150px;
+  }
+  #buttons {
+    text-align: center;
+  }
+  button {
+    display: inline-block;
+    color: white;
+    border-width: 3px;
+    margin: 50px;
+    padding: 15px 50px;
+    border-color: white;
+    border-radius: 4px;
+    background: none;
+  }
+  #appimg {
+    margin: 0 auto;
+    display: block;
+    transform: translateY(100px);
+  }
+  #appimg:hover {
+    transform: translateY(5px)
+  }
+  #middlecontainer {
+    background-color: rgba(44, 44, 54, 0.9);
+  }
+  .icomoon {
+    font-family: Icons;
+  }
+  .row {
+    display: inline;
+    margin: 0 auto;
   }
 }
