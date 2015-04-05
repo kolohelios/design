@@ -1,7 +1,73 @@
 #rumble-labs {
+  @yellow-color: #eaec57;
 
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
   background-color: black;
+  overflow: none;
   p {
     color: white;
   }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  h1 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  #topbar {
+    position: fixed;
+    background-color: black;
+    top: 80px;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    Z-index: 100;
+  }
+  #nav {
+    letter-spacing: 4px;
+    display: inline;
+    font-family: helvetica;
+    font-size: 13px;
+    text-align: center;
+    position: relative;
+    top: -10px;
+  }
+  #logo {
+    position: relative;
+    left: 30px;
+    top: 30px;
+  }
+  #work-with-us-text {
+    color: @yellow-color;
+    position: relative;
+    right: 0px;
+  }
+  #topcontainer {
+    overflow: hidden;
+    margin: 0 auto;
+    background: url("/assets/rumble-labs/header-brogramming-niall-phil.jpg");
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
+  }
+  #learn-more-button-wrapper {
+    text-align: center;
+  }
+  #learn-more-button {
+    background: none;
+    color: @yellow-color;
+    border-color: @yellow-color;
+    border-radius: 5px;
+    width: 200px;
+    height: 60px;
+  }
+  #video {
+
+  }
+
 }
