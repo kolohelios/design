@@ -5,64 +5,76 @@ block content
       img#logo(src="/assets/archeeve/logo.png")
       img#oplaward(src="/assets/archeeve/one-page-love-award-right.png")
       h1 THE MOST USEFUL APP TO ORGANISE YOUR BOOKMARKS
-      #buttons
-        button GET IT FOR MAC
-        button GET IT FOR WINDOWS
-      img#appimg(src="/assets/archeeve/app.png")
+      #get-it-buttons
+        .get-it-button GET IT FOR MAC
+        .get-it-button GET IT FOR WINDOWS
+      #appimgcontainer
+        img#appimg(src="/assets/archeeve/app.png")
     #featurescontainer
       h1#featuresheader FEATURES
       ul.row
         li
-          i.fa.fa-search.fa-2x
-          p.headers SEARCH
-          p.desc Search bookmarks by title or description
+          i.fa.fa-search.fa-3x
+          p.feature-header SEARCH
+          p.feature-desc Search bookmarks by title or description
         li
-          i.fa.fa-folder-open.fa-2x
-          p.headers ORGANISE
-          p.desc Organise bookmarks with collections and tags
+          i.fa.fa-folder-open.fa-3x
+          p.feature-header ORGANISE
+          p.feature-desc Organise bookmarks with collections and tags
         li
-          i.fa.fa-star.fa-2x
-          p.headers FAVORITES
-          p.desc Find favorites bookmarks with ease
+          i.fa.fa-star.fa-3x
+          p.feature-header FAVORITES
+          p.feature-desc Find favorites bookmarks with ease
         li
-          i.fa.fa-th-large.fa-2x
-          p.headers GRID/LIST
-          p.desc Switch between grid or list view
+          i.fa.fa-th-large.fa-3x
+          p.feature-header GRID/LIST
+          p.feature-desc Switch between grid or list view
       ul.row
         li
-          i.fa.fa-picture-o.fa-2x
-          p.headers SCREENSHOTS
-          p.desc Archeeve automatically generates screenshot of each bookmark
+          i.fa.fa-picture-o.fa-3x
+          p.feature-header SCREENSHOTS
+          p.feature-desc Archeeve automatically generates screenshot of each bookmark
         li
-          i.fa.fa-globe.fa-2x
-          p.headers MULTILINGUAL
-          p.desc Archeeve speaks in your language *
+          i.fa.fa-globe.fa-3x
+          p.feature-header MULTILINGUAL
+          p.feature-desc Archeeve speaks in your language*
         li
-          i.fa.fa-refresh.fa-2x
-          p.headers SYNC
-          p.desc Sync your bookmarks with Pocket
+          i.fa.fa-refresh.fa-3x
+          p.feature-header SYNC
+          p.feature-desc 
+            span Sync your bookmarks with 
+            span.anchor Pocket
         li
-          i.fa.fa-download.fa-2x
-          p.headers IMPORT/EXPORT
-          p.desc Import/Export of bookmark files
+          i.fa.fa-download.fa-3x
+          p.feature-header IMPORT/EXPORT
+          p.feature-desc Import/Export of bookmark files
       p#note * English, Polish, German, Spanish, Portuguese, Turkish, Dutch, French
     #screenshotscontainer
       h1 SCREENSHOTS
-      #test
-        ul.row-screenshots
-          li: img.screenshot(src="/assets/archeeve/archeeve1.png")
-          li: img.screenshot(src="/assets/archeeve/archeeve2.png")
-          li: img.screenshot(src="/assets/archeeve/archeeve3.png")
-        ul.row-screenshots
-          li: img.screenshot(src="/assets/archeeve/archeeve4.png")
-          li: img.screenshot(src="/assets/archeeve/archeeve5.png")
-          li: img.screenshot(src="/assets/archeeve/archeeve6.png")
-        ul.row-screenshots
-          li: img.screenshot(src="/assets/archeeve/archeeve7.png")
-          li: img.screenshot(src="/assets/archeeve/archeeve8.png")
+      ul.row-screenshots
+        li: img.screenshot(src="/assets/archeeve/archeeve1.png")
+        li: img.screenshot(src="/assets/archeeve/archeeve2.png")
+        li: img.screenshot(src="/assets/archeeve/archeeve3.png")
+      ul.row-screenshots
+        li: img.screenshot(src="/assets/archeeve/archeeve4.png")
+        li: img.screenshot(src="/assets/archeeve/archeeve5.png")
+        li: img.screenshot(src="/assets/archeeve/archeeve6.png")
+      ul.row-screenshots
+        li: img.screenshot(src="/assets/archeeve/archeeve7.png")
+        li: img.screenshot(src="/assets/archeeve/archeeve8.png")
     #closingcontainer
       h1 GET THE APP NOW FOR $4.99
-      p Every transaction on Selz happens through an encrypted HTTP Secure connection.
+      p#transaction-text 
+        span Every transaction on 
+        a(href="#").anchor Selz 
+        span happens through an encrypted HTTP Secure connection.
+      #os-buttons
+        button.os-button#mac-os-button ARCHEEVE MAC OS X (1.0.5)
+        button.os-button ARCHEEVE WINDOWS
     #footercontainer
       p All Rights Reserved. Copyright © 2014 Archeeve, mobily.pl
-      p Created by Marcin Dziewulski (Warsaw, Poland), website: mobily.pl, twitter: @marcinmobily
+      p 
+        span Created by Marcin Dziewulski (Warsaw, Poland), website: 
+        span.anchor mobily.pl
+        span , twitter: 
+        span.anchor @marcinmobily

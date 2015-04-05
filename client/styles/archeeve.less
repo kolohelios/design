@@ -7,16 +7,20 @@
     font-family: "SourceSansPro";
     src: url(../assets/archeeve/sourcesanspro-regular-webfont.woff);
   }
+  @teal-color: #69ded4;
+  @stripe-color-1: rgba(29, 30, 35, 0.91);
+  @stripe-color-2: rgba(28, 28, 32, 0.91);
   background: url("/assets/archeeve/background2.jpg");
   background-position: fixed;
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
+  -webkit-font-smoothing: antialiased;
   #topcontainer {
-    background-color: rgba(51, 52, 71, 0.75);
+    background-color: @stripe-color-1;
     overflow: hidden;
     position: relative;
-    padding-top: 235px;
+    padding-top: 200px;
     margin: 0 auto;
   }
   #oplaward {
@@ -34,31 +38,32 @@
   }
   h1 {
     margin: 0 auto;
-    padding: 50px;
+    padding: 100px 50px 50px;
     text-align: center;
+    letter-spacing: 1.5px;
     color: white;
     font-family: Bonveno;
-    font-weight: lighter;
-    font-size: 32px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 30px;
   }
   p {
     text-align: center;
     color: gray;
     font-family: SourceSansPro;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: lighter;
   }
-  #firstheader {
-    margin-bottom: 0px;
-  }
-  #buttons {
+  #get-it-buttons {
     text-align: center;
-    margin-top: -50px;
+    margin-top: -70px;
   }
-  button {
+  .get-it-button {
     display: inline-block;
+    font-size: 12px;
     color: white;
-    font-stretch: 20%;
+    letter-spacing: 2px;
     border-width: 4px;
     margin: 50px 3px;
     padding: 15px 50px;
@@ -67,71 +72,116 @@
     border-radius: 4px;
     background: none;
   }
+  ul {
+    padding: 0;
+  }
+  li {
+    display: inline;
+    text-align: center;
+    padding: 0
+  }
+  #appimgcontainer {
+    text-align: center;
+  }
   #appimg {
-    margin: 0 auto;
-    transform: translateY(200px);
+    width: 800px;
+    margin: -93px;
+    transform: translateY(95px);
   }
   #appimg:hover {
-    transform: translateY(-5px)
+    transform: translateY(20px)
+  }
+  #featuresheader {
+    padding-top: 100px;
   }
   #featurescontainer {
-    background-color: rgba(44, 44, 54, 0.9);
+    background-color: @stripe-color-2;
     padding-bottom: 25px;
+    text-align: center;
   }
   #featurescontainer > .row > ul {
     padding-bottom: 20px;
-    margin: 0 auto;
   }
   #featurescontainer > .row > li {
     font-size: 15px;
-    margin: 0 50px;
+    margin: 0 30px;
     font-family: Bonveno;
     color: white;
     display: inline-block;
-    width: 100px;
+    width: 150px;
     vertical-align: top;
-    text-align: center;
   }
-  .desc {
+  .feature-header {
+    font-size: 18px;
+    color: white;
+    letter-spacing: 2px;
+  }
+  .feature-desc {
     font-size: 13px;
     color: gray;
     font-weight: lighter;
+    letter-spacing: 1.5px;
+    line-height: 26px;
   }
   #note {
+    padding: 50px;
     text-align: center;
     color: gray;
   }
   #screenshotscontainer {
-    background-color: rgba(44, 45, 54, 0.93);
+    background-color: @stripe-color-1;
     padding-top: -25px;
-    padding-bottom: 25px;
-    margin: 0 auto;
+    padding-bottom: 75px;
   }
   #screenshotscontainer > .row > ul {
     padding-bottom: 20px;
-    text-align: center;
     margin: 0 auto;
     display: inline;
   }
-  #screenshotscontainer > .row > li {
-    display: inline-block;
+  .row-screenshots {
+    text-align: center;
   }
   .screenshot {
     width: 200px;
-    margin: 0 auto;
   }
   #closingcontainer  {
-    background-color: rgba(44, 44, 54, 0.9);
+    background-color: @stripe-color-2;
     padding-top: -25px;
     padding-bottom: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
+  }
+  #transaction-text {
+    color: white;
+    font-size: 18px;
+    margin-top: -20px;
+  }
+  .anchor {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid @teal-color;
+  }
+  #os-buttons {
+    text-align: center;
+  }
+  .os-button {
+    background-color: rgba(44, 44, 54, 0.9);
+    border: none;
+    width: 350px;
+    height: 50px;
+    border-radius: 4px;
+    margin: 50px 3px;
+    font-family: SourceSansPro;
+    font-size: 13px;
+    letter-spacing: 2px;
+    padding: 15px 50px;
+  }
+  #mac-os-button {
+    background-color: @teal-color;
+    color: white;
   }
   #footercontainer {
-    background-color: rgba(44, 45, 54, 0.93);
-    margin-top: 50px;
-    padding-top: -25px;
-  }
-  .row-screenshots {
-    text-align: center;
+    padding: 30px;
+    background-color: @stripe-color-1;
+    margin-top: -50px;
   }
 }
