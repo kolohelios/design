@@ -1,12 +1,11 @@
 #archeeve {
-
   @font-face {
     font-family: "Bonveno";
     src: url(../assets/archeeve/BonvenoCF-Light-webfont.woff);
   }
   @font-face {
-    font-family: "Icons";
-    src: url(../assets/archeeve/icomoon.woff);
+    font-family: "SourceSansPro";
+    src: url(../assets/archeeve/sourcesanspro-regular-webfont.woff);
   }
   background: url("/assets/archeeve/background2.jpg");
   background-position: fixed;
@@ -17,73 +16,122 @@
     background-color: rgba(51, 52, 71, 0.75);
     overflow: hidden;
     position: relative;
+    padding-top: 235px;
+    margin: 0 auto;
   }
   #oplaward {
     position: fixed;
     right: 10px;
     top: 100px;
+    Z-index: 100;
   }
   #logo {
     position: fixed;
     width: 40px;
     left: 30px;
     top: 100px;
+    Z-index: 100;
   }
   h1 {
     margin: 0 auto;
-    padding: 100px;
+    padding: 50px;
     text-align: center;
     color: white;
     font-family: Bonveno;
-    font-weight: 100;
-    font-size: 33px;
+    font-weight: lighter;
+    font-size: 32px;
+  }
+  p {
+    text-align: center;
+    color: gray;
+    font-family: SourceSansPro;
+    font-size: 12px;
+    font-weight: lighter;
   }
   #firstheader {
-    padding-top: 105px;
+    margin-bottom: 0px;
   }
   #buttons {
     text-align: center;
+    margin-top: -50px;
   }
   button {
     display: inline-block;
     color: white;
-    border-width: 3px;
-    margin: 50px;
+    font-stretch: 20%;
+    border-width: 4px;
+    margin: 50px 3px;
     padding: 15px 50px;
     border-color: white;
+    border-style: solid;
     border-radius: 4px;
     background: none;
   }
   #appimg {
     margin: 0 auto;
-    display: block;
-    transform: translateY(100px);
+    transform: translateY(200px);
   }
   #appimg:hover {
-    transform: translateY(5px)
+    transform: translateY(-5px)
   }
-  #middlecontainer {
+  #featurescontainer {
     background-color: rgba(44, 44, 54, 0.9);
-    padding-top: -100px;
+    padding-bottom: 25px;
   }
-  .row > ul {
+  #featurescontainer > .row > ul {
     padding-bottom: 20px;
     margin: 0 auto;
-    height: 125px;
-
   }
-  .row > li {
+  #featurescontainer > .row > li {
     font-size: 15px;
     margin: 0 50px;
     font-family: Bonveno;
     color: white;
     display: inline-block;
     width: 100px;
+    vertical-align: top;
     text-align: center;
   }
   .desc {
-    font-size: 12px;
+    font-size: 13px;
     color: gray;
-    height: 150px;
+    font-weight: lighter;
+  }
+  #note {
+    text-align: center;
+    color: gray;
+  }
+  #screenshotscontainer {
+    background-color: rgba(44, 45, 54, 0.93);
+    padding-top: -25px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+  }
+  #screenshotscontainer > .row > ul {
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto;
+    display: inline;
+  }
+  #screenshotscontainer > .row > li {
+    display: inline-block;
+  }
+  .screenshot {
+    width: 200px;
+    margin: 0 auto;
+  }
+  #closingcontainer  {
+    background-color: rgba(44, 44, 54, 0.9);
+    padding-top: -25px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+  }
+  #footercontainer {
+    background-color: rgba(44, 45, 54, 0.93);
+    margin-top: 50px;
+    padding-top: -25px;
+  }
+  .row-screenshots {
+    text-align: center;
   }
 }
