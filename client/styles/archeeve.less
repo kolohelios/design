@@ -1,4 +1,5 @@
 #archeeve {
+
   @font-face {
     font-family: "Bonveno";
     src: url(../assets/archeeve/BonvenoCF-Light-webfont.woff);
@@ -15,14 +16,18 @@
   #topcontainer {
     background-color: rgba(51, 52, 71, 0.75);
     overflow: hidden;
-  }
-  #logoimage {
-    padding: 20px;
-    width: 40px;
-    positon: relative;
+    position: relative;
   }
   #oplaward {
-    float: right;
+    position: fixed;
+    right: 10px;
+    top: 100px;
+  }
+  #logo {
+    position: fixed;
+    width: 40px;
+    left: 30px;
+    top: 100px;
   }
   h1 {
     margin: 0 auto;
@@ -34,7 +39,7 @@
     font-size: 33px;
   }
   #firstheader {
-    padding-top: 150px;
+    padding-top: 105px;
   }
   #buttons {
     text-align: center;
@@ -59,12 +64,26 @@
   }
   #middlecontainer {
     background-color: rgba(44, 44, 54, 0.9);
+    padding-top: -100px;
   }
-  .icomoon {
-    font-family: Icons;
-  }
-  .row {
-    display: inline;
+  .row > ul {
+    padding-bottom: 20px;
     margin: 0 auto;
+    height: 125px;
+
+  }
+  .row > li {
+    font-size: 15px;
+    margin: 0 50px;
+    font-family: Bonveno;
+    color: white;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+  }
+  .desc {
+    font-size: 12px;
+    color: gray;
+    height: 150px;
   }
 }
