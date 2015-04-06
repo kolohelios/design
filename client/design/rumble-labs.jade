@@ -2,7 +2,12 @@ extends ../index
 block content
   #rumble-labs
     #topbar
-      p#nav ABOUT US&nbsp;&#x2F;&nbsp;PROJECTS&nbsp;&#x2F;&nbsp;BLOG   
+      p#nav 
+        a(href="#") ABOUT US
+        span &nbsp;&#x2F;&nbsp;
+        a(href="#") PROJECTS
+        span &nbsp;&#x2F;&nbsp;
+        a(href="#") BLOG   
       img#logo(src="../assets/rumble-labs/rumble-logo.svg")
       a#work-with-us-text(href="#") Work with us &gt;
     #top-container
@@ -112,6 +117,7 @@ block content
       p#email-text Or email us -&nbsp;
         a#email-addy(href="#") hello@rumblelabs.com
     #footer-container
+      hr#thin-hr
       ul
         li#footer-column
           img#footer-image(src="../assets/rumble-labs/belfast.png")
