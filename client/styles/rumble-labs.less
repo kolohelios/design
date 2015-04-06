@@ -1,10 +1,13 @@
 #rumble-labs {
-  @yellow-color: #eaec57;
+  @yellow-color: rgba(247, 224, 83, 0.85);
 
   width: 100%;
   -webkit-font-smoothing: antialiased;
-  background-color: black;
   overflow: none;
+  background-color: rgba(190, 185, 185, 0.78);
+  background: url("/assets/rumble-labs/header-brogramming-niall-phil.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
   p {
     color: white;
   }
@@ -15,45 +18,52 @@
   h1 {
     font-size: 40px;
     color: white;
+    margin-top: 100px;
     text-align: center;
     font-family: sans-serif;
   }
   #topbar {
-    position: fixed;
     background-color: black;
-    top: 80px;
-    width: 100%;
     height: 100px;
     margin: 0 auto;
-    Z-index: 100;
+    text-align: center;
   }
   #nav {
     letter-spacing: 4px;
-    display: inline;
     font-family: helvetica;
     font-size: 13px;
-    text-align: center;
-    position: relative;
-    top: -10px;
+    color: white;
+    position: absolute;
+    top: 110px;
   }
   #logo {
-    position: relative;
+    position: absolute;
     left: 30px;
-    top: 30px;
+    top: 110px;
   }
   #work-with-us-text {
     color: @yellow-color;
-    position: relative;
-    right: 0px;
+    font-size: 18px;
+    font-family: serif;
+    font-weight: 300;
   }
-  #topcontainer {
+  #top-container {
+    text-align: center;
     overflow: hidden;
     margin: 0 auto;
-    background: url("/assets/rumble-labs/header-brogramming-niall-phil.jpg");
+    background-color: rgba(161, 159, 159, 0.09);
     position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
+
     min-height: 600px;
+  }
+  #experts-in-text {
+    font-size: 20px;
+    font-weight: 900;
+  }
+  #app-dev-text {
+    font-family: georgia;
+    font-size: 30px;
+    margin: 0 150px 75px;;
   }
   #learn-more-button-wrapper {
     text-align: center;
@@ -62,11 +72,38 @@
     background: none;
     color: @yellow-color;
     border-color: @yellow-color;
+    font-size: 15px;
     border-radius: 5px;
+    letter-spacing: 3px;
     width: 200px;
     height: 60px;
   }
-  #video {
+  #video-container {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #video-container-video {
+   margin: 0 50px;
+   width: 800px;
+   height: 449px;
+   border: none;
+  }
+  #about-us-container {
+
+  }
+  #about-us-title {
+
+  }
+  #services-container {
+
+  }
+  #projects-container {
+
+  }
+  #contact-container {
+
+  }
+  #footer-container {
 
   }
 
