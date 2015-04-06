@@ -2,9 +2,9 @@ extends ../index
 block content
   #rumble-labs
     #topbar
+      p#nav ABOUT US&nbsp;&#x2F;&nbsp;PROJECTS&nbsp;&#x2F;&nbsp;BLOG   
       img#logo(src="../assets/rumble-labs/rumble-logo.svg")
-      span#nav ABOUT US&nbsp;&#x2F;&nbsp;PROJECTS&nbsp;&#x2F;&nbsp;BLOG   
-      span#work-with-us-text Work with us &gt;
+      p#work-with-us-text Work with us &gt;
     #top-container
       h1 HELLO, WE'RE RUMBLE LABS
       p#experts-in-text Experts in
@@ -16,13 +16,21 @@ block content
     #about-us-container
       h2 ABOUT US
       p#about-us-title We work the Rumble way
-      ul
-        li Great Culture
-        li Proven Process
+      ul#about-us-row
+        li.about-us-column
+          img.about-us-image(src="../assets/rumble-labs/home-culture.jpg")
+          p Great Culture
+          p Collaborative, open and fun! Our culture maximises happiness to the benefit of productivity and creativity.
+          p Get to know us better
+        li.about-us-column
+          img.about-us-image(src="../assets/rumble-labs/home-process.jpg")
+          p Proven Process
+          p We practice Agile Design and Development, taking the time to understand requirements and deliver on them.
+          p See where we've applied this
     #services-container
-  
+      
     #projects-container
       
     #contact-container
-      
+      h2 GET IN TOUCH
     #footer-container
