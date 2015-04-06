@@ -1,5 +1,8 @@
 #rumble-labs {
+  @import url(http://fonts.googleapis.com/css?family=Abel);
+
   @yellow-color: rgba(247, 224, 83, 0.85);
+  @blue-color: #6c9df3;
 
   width: 100%;
   -webkit-font-smoothing: antialiased;
@@ -8,24 +11,38 @@
   background: url("/assets/rumble-labs/header-brogramming-niall-phil.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  a {
-    text-decoration: none;
-    color: white;
-  }
   h1 {
     font-size: 40px;
     color: white;
     margin-top: 100px;
-    text-align: center;
     font-family: sans-serif;
   }
   h2 {
-    font-size: 18px;
+    font-size: 16px;
     color: gray;
     margin-top: 100px;
-    text-align: center;
-    font-weight: 400;
+    font-weight: 600;
     font-family: sans-serif;
+  }
+  h3 {
+    font-family: serif;
+    font-size: 30px;
+    font-color: black;
+    font-weight: 100;
+    text-align: center;
+    display: inline;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-family: georgia;
+    font-size: 24px;
+    font-weight: 900;
+  }
+  hr {
+    width: 100px;
+    height: 0px;
+    border-color: black;
+    border-top-width: 5px;
   }
   #topbar {
     background-color: black;
@@ -62,7 +79,6 @@
     margin: 0 auto;
     background-color: rgba(161, 159, 159, 0.09);
     position: relative;
-
     min-height: 600px;
   }
   #experts-in-text {
@@ -85,9 +101,14 @@
     border-color: @yellow-color;
     font-size: 15px;
     border-radius: 5px;
+    border-style: solid;
     letter-spacing: 3px;
     width: 200px;
-    height: 60px;
+    height: 60px
+  }
+  #learn-more-button:hover {
+    color: white;
+    border-color: white;
   }
   #video-container {
     margin: 0 auto;
@@ -100,12 +121,6 @@
    border: none;
   }
   #about-us-container {
-
-  }
-  #about-us-title {
-    font-family: georgia;
-    font-size: 22px;
-    font-color: black;
     text-align: center;
   }
   #about-us-row {
@@ -113,24 +128,57 @@
     text-align: center;
   }
   .about-us-column {
-      width: 200px;
+      width: 330px;
       display: inline-block;
+      margin: 0 30px;
+      vertical-align: top;
   }
   .about-us-image {
     width: 150px;
   }
+  .about-us-header {
 
+  }
+  .about-us-description {
+    font-family: 'Abel', sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+  }
+  .about-us-links {
+    font-family: 'Abel', sans-serif;
+    color: @blue-color;
+    font-weight: 100;
+    font-size: 22px;
+    text-decoration: underline;
+  }
   #services-container {
-
+    text-align: center;
+  }
+  #services-row {
+    margin: 0 auto;
+  }
+  .services-column {
+    width: 400px;
+    display: inline-block;
+    margin: 0 7px;
+    vertical-align: top;
+    text-align: left;
+  }
+  .services-image {
+    width: 380px;
+  }
+  .services-description {
+    font-family: 'Abel', sans-serif;
+    line-height: 25px;
   }
   #projects-container {
-
+    text-align: center;
   }
   #contact-container {
-
+    text-align: center;
   }
   #footer-container {
-
+    text-align: center;
   }
 
 }
