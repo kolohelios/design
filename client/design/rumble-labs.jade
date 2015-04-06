@@ -12,7 +12,7 @@ block content
       #learn-more-button-wrapper
         button#learn-more-button LEARN MORE &gt;
     #video-container
-      iframe#video-container-video(src="https://player.vimeo.com/video/119068482?title=0&byline=0&portrait=0")
+      iframe#video-container-video(src="https://player.vimeo.com/video/119068482?title=0&byline=0&portr: td.project-listait=0")
     #about-us-container
       h2 ABOUT US
       h3 We work the Rumble way
@@ -54,14 +54,80 @@ block content
     hr
     #projects-container
       h3 Each of our projects involve the following:
-      ul
-        li
-        li
-      ul
-        li
-        li
-          
-      
+      ul.projects-row
+        li.projects-column
+          h4 Planning 
+          p.projects-lead-text A well thought out project plan is fundamental to a projects success.
+          table.project-list
+            tr: td Project speccing
+            tr: td.project-list Research (User, Product, Technical)
+            tr: td.project-list Information architecture
+            tr: td.project-list Userflow analysis
+            tr: td.project-list Content stategy
+        li.projects-column
+          h4 Design
+          p.projects-lead-text An iterative process always geared towards fulfilling a users needs.
+          table.project-list
+            tr: td Prototyping / Wireframing
+            tr: td.project-list User-centric design
+            tr: td.project-list Interface design
+            tr: td.project-list Branding
+            tr: td.project-list Data visualisation
+      ul.projects-row
+        li.projects-column
+          h4 Development
+          p.projects-lead-text Software engineered with Ruby, Rails, Javascript and Objective-C.
+          table.project-list
+            tr: td Front-end dev (HTML5, CSS3)
+            tr: td.project-list API integration
+            tr: td.project-list Testing (Usability, Code)
+            tr: td.project-list Technical consulting
+            tr: td.project-list Content management systems
+        li.projects-column
+          h4 Growth
+          p.projects-lead-text Management, support and tr: td.project-listacking for your project over its lifespan.
+          table.project-list
+            tr: td Training
+            tr: td.project-list Social media engagement
+            tr: td.project-list Operations and deployments
+            tr: td.project-list Hosting and support
+            tr: td.project-list Analytics
+    #projects-learn-container
+      #projects-learn-bar
+        p#projects-learn-text LEARN ABOUT OUR PROJECTS
+      img.project-photo(src="../assets/rumble-labs/project-cover-nuu.jpg")
+      img.project-photo(src="../assets/rumble-labs/digital-circle-monitor.jpg")
+      img.project-photo(src="../assets/rumble-labs/yolla-scan.jpg")
+      img.project-photo(src="../assets/rumble-labs/nitb-app-2.jpg")
+      img.project-photo(src="../assets/rumble-labs/lisson-gallery.jpg")
+      img.project-photo(src="../assets/rumble-labs/squarevid-punchbag.jpg")
     #contact-container
       h2 GET IN TOUCH
+      h3 Do you have a project enquiry?
+      hr#white-hr
+      p#contact-text-wrapper: span#great-text Great!&nbsp;
+        span#normal-text Tell us about it by completing our project planner. Doing so helps us better understand your requirements and in turn we can provide a more helpful response.
+      #start-button-wrapper
+        button#start-button START YOUR PROJECT PLAN NOW &gt;
+      p#email-text Or email us -&nbsp;
+        a#email-addy(href="#") hello@rumblelabs.com
     #footer-container
+      ul
+        li#footer-column
+          img#footer-image(src="../assets/rumble-labs/belfast.png")
+          p#great-text The Rumble Laboratory
+          p 46 Hill St, Belfast, BT1 2LB
+          p Call: +44 (0) 28 9568 0011
+        li#footer-column
+          img#footer-image(src="../assets/rumble-labs/london.png")
+          p#great-text The Field Office
+          p 125 - 127 Mare Street London, E8 3RH
+          p Call: +44 (0) 20 3239 3944
+        li#footer-column
+          p#on-the-web-text On the web
+          ul
+            i.fa.fa-twitter-square.fa-3x.footer-column.social-icons
+            i.fa.fa-facebook-square.fa-3x.footer-column.social-icons
+            i.fa.fa-flickr.fa-3x.footer-column.social-icons
+            i.fa.fa-instagram.fa-3x.footer-column.social-icons
+          
