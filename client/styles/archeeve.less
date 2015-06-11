@@ -18,10 +18,12 @@
   -webkit-font-smoothing: antialiased;
   #topcontainer {
     background-color: @stripe-color-1;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
     padding-top: 200px;
     margin: 0 auto;
+    min-height: 510px;
+    max-height: 510px;
   }
   #oplaward {
     position: fixed;
@@ -98,6 +100,7 @@
     background-color: @stripe-color-2;
     padding-bottom: 25px;
     text-align: center;
+    height: 803px;
   }
   #featurescontainer > .row > ul {
     padding-bottom: 20px;
@@ -138,18 +141,12 @@
     margin: 0 auto;
     display: inline;
   }
-  #screenshotscontainer > .row > ul {
-    padding-bottom: 20px;
-    margin: 0 auto;
-    display: inline;
-  }
   .row-screenshots {
     text-align: center;
   }
   #row-screenshots-last {
-    position: relative;
-    margin-left: 168px;
-    left: 0;
+    position: absolute;
+    margin-left: 245px;
   }
   .screenshot {
     width: 200px;
